@@ -1,3 +1,2 @@
-const name = require('./utils');
-
-console.log(name);
+import chalk from 'chalk';
+console.log(chalk.green('Hello world!'));
