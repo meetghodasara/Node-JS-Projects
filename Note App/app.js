@@ -1,6 +1,9 @@
 const getNotes = require("./notes");
 const yargs = require("yargs");
 const { describe } = require("yargs");
+const fs = require('fs');
+
+
 
 //Adding a new Note
 yargs.command({
