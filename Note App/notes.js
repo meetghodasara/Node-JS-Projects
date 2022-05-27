@@ -35,6 +35,12 @@ const removeNote = function(title){
     const noteToKeep = notes.filter(function(note){
         return note.title!== title;
     })
+    
+    if(notes.length === noteToKeep.length){
+        console.log("Note is not removed");    
+    }else{
+        console.log("Note is removed");
+    }
     saveNotes(noteToKeep);
 }
 module.exports = {
