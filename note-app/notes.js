@@ -2,7 +2,7 @@ const fs = require("fs");
 
 const addNote = (title, body) => {
     const notes = loadNote();
-    // const duplicateNotes = notes.filter((notes)=>{
+    // const duplicateNotes = notes.filter(function(notes){
     //     return notes.title === title
     // })
     const duplicateNote = notes.find((note) => note.title === title);
